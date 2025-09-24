@@ -9,7 +9,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var templates = require("./templates");
 var DocUtils = require("docxtemplater").DocUtils;
-var DOMParser = require("xmldom").DOMParser;
+// var DOMParser = require("xmldom").DOMParser;
+const { DOMParser } = require('@xmldom/xmldom')
 
 function isNaN(number) {
 	return !(number === number);
@@ -6115,6 +6116,7 @@ function split(source,start){
 }
 
 exports.XMLReader = XMLReader;
+
 
 
 },{}]},{},[])("/js/index.js")
